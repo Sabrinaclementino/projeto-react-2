@@ -2,6 +2,10 @@
 
 Ferramenta para auxiliar no registro e acompanhamento de tarefas diversas. Insira suas tarefas necessárias e depois marque-a após concluída. Há também os campos que resumem a quantidade de tarefas totais, tarefas pendentes e concluídas.
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/7c63ece2-4ad8-4c37-b018-5656bd1fc07a" width="550px" />
+</div>
+
 # Evolução
 
 <strong>Práticas:</strong><br>
