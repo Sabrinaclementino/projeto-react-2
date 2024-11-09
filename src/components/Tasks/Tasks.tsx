@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
 interface Task {
@@ -28,6 +28,14 @@ export const Tasks: React.FC = () => {
 
     setTaskTitle("");
   }
+
+  useEffect(() => {
+    const tasksOnLocalStorage = localStorage.getItem("tasks");
+
+    if (tasksOnLocalStorage) {
+      setTasks(JSON.parse(tasksOnLocalStorage));
+    }
+  }, []);
 
   return (
     <section className={styles.container}>
