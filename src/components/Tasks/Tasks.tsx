@@ -19,10 +19,13 @@ export const Tasks: React.FC = () => {
       return;
     }
 
-    setTasks([
+    const newTasks = [
       ...tasks,
       { id: new Date().getTime(), title: taskTitle, done: false },
-    ]);
+    ];
+    setTasks(newTasks);
+    localStorage.setItem("tasks", JSON.stringify(newTasks));
+
     setTaskTitle("");
   }
 
